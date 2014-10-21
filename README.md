@@ -13,7 +13,7 @@ of lines down. After that, you can try the extras as well if you want to.
 All you need is GHC and an editor to get going. It is recommended to keep a REPL
 running to try out your functions and experiment with new stuff:
 
-## `ghci`
+## Starting the REPL
 
 ```
 $ cd haskell-robot-lab
@@ -22,6 +22,8 @@ $ ghci
 ```
 
 ### Loading the code
+
+To call your functions from the REPL you need to load the source file.
 
 ```
 Prelude> :l Robots.hs
@@ -32,6 +34,8 @@ Prelude> runAll (0, 0, 0.0) (20, 20) "GGRR"
 ```
 
 ### Reloading the code
+
+After editing `Robots.hs` you might want to reload it in the REPL.
 
 ```
 Prelude> :r
