@@ -36,10 +36,20 @@ type Level = (Int, Int) -- w, h
 -- try to implement it.
 
 runAll :: Robot -> Level -> [Command] -> Robot
-runAll _ _ _ = undefined
 
 
 
+
+
+-- Solution example:
+
+runAll robot _ = foldl runCommand robot
+
+runCommand :: Robot -> Command -> Robot
+runCommand robot@(x, y, v) command | command == 'G' = (x + round (cos v), y + round (sin v), v)
+                                   | command == 'R' = (x, y, v - pi/2)
+                                   | command == 'L' = (x, y, v + pi/2)
+                                   | otherwise = robot
 
 
 
