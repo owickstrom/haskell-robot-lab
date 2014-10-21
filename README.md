@@ -33,6 +33,17 @@ Prelude> runAll (0, 0, 0.0) (20, 20) "GGRR"
 ...
 ```
 
+### The `main` function
+
+You can run the `main` function directly from the REPL to try entering robot
+commands.
+
+```
+Prelude> main
+GRGGGGL
+...
+```
+
 ### Reloading the code
 
 After editing `Robots.hs` you might want to reload it in the REPL.
